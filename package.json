@@ -1,0 +1,17 @@
+{
+  "name": "marching-squares-contours",
+  "version": "1.0.0",
+  "description": "Isoline extraction from 2D scalar fields with marching squares: saddle disambiguation, segment stitching, orientation, simplification and SVG export.",
+  "type": "module",
+  "main": "src/marching-squares.js",
+  "exports": "./src/marching-squares.js",
+  "bin": { "contour-svg": "bin/contour-svg.js" },
+  "scripts": {
+    "test": "node --test",
+    "demo:svg": "node bin/contour-svg.js --demo terrain --levels 12 > terrain.svg",
+    "serve": "python3 -m http.server 8000"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "keywords": ["marching-squares", "contour", "isoline", "topographic", "svg", "geometry"]
+}
